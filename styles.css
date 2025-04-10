@@ -1,0 +1,94 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0e0e0e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    text-shadow: 0 0 10px #00FF00;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #999;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #00D4FF;
+}
+
+.live-chart, .prediction-form, .prediction-results {
+    background-color: #1c1c1e;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+}
+
+#chart-placeholder, #form-placeholder, #results-placeholder {
+    min-height: 200px;
+}
+
+button {
+    background-color: #00FF00;
+    color: #0e0e0e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00FF00;
+}
+
+input, select {
+    background-color: #2a2a2d;
+    color: #ffffff;
+    border: 1px solid #00D4FF;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #00D4FF;
+}
+
+/* Streamlit elemanlarına özel stiller */
+.stButton>button {
+    background-color: #00FF00 !important;
+    color: #0e0e0e !important;
+    border-radius: 12px !important;
+}
+
+.stTextInput>div>input, .stSelectbox>div>select {
+    background-color: #2a2a2d !important;
+    color: #ffffff !important;
+    border: 1px solid #00D4FF !important;
+    border-radius: 8px !important;
+}
